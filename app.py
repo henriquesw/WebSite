@@ -7,7 +7,7 @@ API_KEY = "b6907d289e10d714a6e88b30761fae22"
 
 @app.route('/')
 def index():
-    return 'App Works!'
+    return send_from_directory('html', 'index.html')
 
 @app.route('/&lt;string:city&gt;/&lt;string:country&gt;/')
 def weather_by_city(country, city):
