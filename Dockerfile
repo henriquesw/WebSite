@@ -7,4 +7,5 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . /app
 EXPOSE 80
-CMD ["sudo", "python", "app.py" ]
+RUN set FLASK_APP=app.py
+CMD ["flask", "run", "--port=80" ]
