@@ -5,3 +5,6 @@ services:
     ports:
       - "5000:5000"
     network_mode: bridge
+    environment:
+      - VIRTUAL_HOST=flask.local
+      - VIRTUAL_PORT=5000
