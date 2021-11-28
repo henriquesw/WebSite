@@ -7,4 +7,4 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 COPY . /app
 EXPOSE 80
-CMD [ "python", "app.py" ]
+CMD ["sudo", "python", "app.py" ]
