@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 COPY . /app
 EXPOSE 80
 RUN set FLASK_APP=app.py
-CMD ["flask", "run", "--port=80" ]
+CMD ["flask", "run", "--port=5000" ]
