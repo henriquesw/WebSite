@@ -4,7 +4,4 @@ services:
     build: .
     ports:
       - "80:80"
-networks:
-  default:
-    external: true
-    name: bridge
+    network_mode: bridge
